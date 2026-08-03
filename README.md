@@ -100,7 +100,8 @@ plt.imshow(cv2.cvtColor(scaled_image, cv2.COLOR_BGR2RGB))
 plt.title("Scaled Image")  
 plt.axis('off')
 
-
+~~~
+~~~
 shear_matrix = np.float32([[1, 0.5, 0], [0.5, 1, 0]]) 
 sheared_image = cv2.warpAffine(image, shear_matrix, (image.shape[1], image.shape[0]))
 plt.imshow(cv2.cvtColor(sheared_image, cv2.COLOR_BGR2RGB)) 
